@@ -51,7 +51,7 @@ action "runonce", :description => "Initiates a single Puppet run" do
         :validation  => '^[^\d][a-zA-Z_\d]+$',
         :optional    => true,
         :maxlength    => 100
-		
+                
     output :output,
            :description => "Output from puppetd",
            :display_as => "Output"
