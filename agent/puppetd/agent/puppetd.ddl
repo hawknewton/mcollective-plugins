@@ -44,6 +44,14 @@ action "runonce", :description => "Initiates a single Puppet run" do
         :type        => :boolean,
         :optional    => true
 
+    input :env,
+        :prompt      => "Environment",
+        :description => "Environment agent should use, if any",
+        :type        => :string,
+        :validation  => '^[^\d][a-zA-Z_\d]+$',
+        :optional    => true,
+        :maxlength    => 100
+		
     output :output,
            :description => "Output from puppetd",
            :display_as => "Output"
