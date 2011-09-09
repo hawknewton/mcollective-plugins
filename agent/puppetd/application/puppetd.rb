@@ -140,3 +140,4 @@ class MCollective::Application::Puppetd<MCollective::Application
         printrpcstats
     end
 end
+# vi:tabstop=4:expandtab:ai:filetype=ruby
