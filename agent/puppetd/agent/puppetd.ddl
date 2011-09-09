@@ -38,13 +38,11 @@ action "disable", :description => "Disables the Puppetd" do
 end
 
 action "runonce", :description => "Initiates a single Puppet run" do
-    #input :forcerun,
-    #    :prompt      => "Force puppet run",
-    #    :description => "Should the puppet run happen immediately",
-    #    :type        => :string,
-    #    :validation  => '^.+$',
-    #    :optional    => true,
-    #    :maxlength   => 5
+    input :forcerun,
+        :prompt      => "Force puppet run",
+        :description => "Should the puppet run happen immediately",
+        :type        => :boolean,
+        :optional    => true
 
     output :output,
            :description => "Output from puppetd",
